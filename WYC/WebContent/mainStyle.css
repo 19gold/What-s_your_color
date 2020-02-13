@@ -6,34 +6,14 @@ body{
 	background-image:url('img/main.jpg');
 	background-repeat:no-repeat; 
 	background-position: center top;
+	position : relative;
 }
 
-p {
-	color: black;
-    font-size: 50px;
- 	font-family:"a시월구일4";
- 	p-align: center;
- 	word-space : nowrap;
- 	word-wrap: break-word;
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
+
 
 .p1{
 	 	display: inline-block;
-	 	float:left; 
-	 	margin-right:10px;
-	 	align:center;
-	 	color: black;
-	    font-size: 220px;
-	 	font-family:"a시월구일4";
-	 	text-align: center;
-	 	
-}
-
-.p2{
-	 	display: inline-block;
-	 	float:left; 
+	 	/*float:left;*/
 	 	margin-right:10px;
 	 	align:center;
 	 	color: black;
@@ -44,6 +24,7 @@ p {
 }
 
 .title{
+	positio :absolute;
     color: black;
     font-size: 120px;
  	font-family:"a시월구일4";
@@ -52,9 +33,48 @@ p {
 }
 
 button{
-	padding: 260px 250px;
+    /*margin-top : 100px;*/
+	padding: 280% 20%;
 	border-radius: 50px;
-	background-color: #e8433d;
+	background-color: #e8433d73;
 	border : none;
 	align:center;
+}
+@media (min-width: 788px) and (max-width: 1124px) and (orientation: landscape) {
+    .title {
+        position: absolute;
+        font-size: 100px;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 787px) {
+
+    /*tablet version*/
+    .title {
+        position: absolute;
+        font-size: 80px;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    /*mobile version*/
+    .title {
+        position: absolute;
+        font-size: 40px;
+    }
+
+}
+
+@media (min-width: 0px) and (max-width: 319px) {
+
+    /*mobile version*/
+    .title {
+        position: absolute;
+        font-size: 20px;
+    }
+   
+
 }

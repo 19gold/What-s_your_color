@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>What's your color</title>
 
 <link href="mainStyle.css" rel="stylesheet" type="text/css">
  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>

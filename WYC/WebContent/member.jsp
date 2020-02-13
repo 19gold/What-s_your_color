@@ -7,9 +7,9 @@
 <body style="overflow:hidden;">
 
 <center>
-<img src="img/login_bg.gif" height="700" width="700"><br>
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
+<img src="img/login_bg.gif" height="40%" width="40%"><br>
+<button class = "fbtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+<button class = "fbtn" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
 </center>
 
 <script>
@@ -26,7 +26,8 @@ window.onclick = function(event) {
 
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="check_01.jsp" method="post">
+  <form class="modal-content animate" action="check_01.jsp" method="post" class = "signin_form">
+  <div class = "containsignin">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
       <img src="img/login_bg.gif" alt="Avatar" class="avatar">
@@ -40,14 +41,12 @@ window.onclick = function(event) {
       <input type="password" placeholder="Enter Password" name="psw" required>
         
       <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
       <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
     </div>
   </form>
 </div>
@@ -55,7 +54,7 @@ window.onclick = function(event) {
 <!-- 회원가입 -->
 
     <div id="id02" class="modal">
-        <form class="modal-content" action="check_01.jsp">
+        <form class="modal-content animate" action="check_01.jsp"class = "signup_form">
             <div class="container">
             <div>
                 <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -78,8 +77,7 @@ window.onclick = function(event) {
                 <label for="psw-repeat"><b>Repeat Password</b></label>
                 <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
 
-                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
+                
                 <div class="clearfix">
                     <button type="button" onclick="document.getElementById('id02').style.display='none'"
                         class="cancelbtn">Cancel</button>
