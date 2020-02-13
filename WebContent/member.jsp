@@ -7,7 +7,7 @@
 <body style="overflow:hidden;">
 
 <center>
-<img src="img/login_bg.gif" height="40%" width="40%"><br>
+<img src="img/login_bg.gif" height="40%" width="40%" oncontextmenu="return false"><br>
 <button class = "fbtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 <button class = "fbtn" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
 </center>
@@ -30,15 +30,15 @@ window.onclick = function(event) {
   <div class = "containsignin">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="img/login_bg.gif" alt="Avatar" class="avatar">
+      <img src="img/login_bg.gif" alt="Avatar" class="avatar" oncontextmenu="return false">
     </div>
 
     <div class="container">
       <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+      <input type="text" placeholder="Enter Username" name="uname" required oncontextmenu="return false">
 
       <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <input type="password" placeholder="Enter Password" name="psw" required oncontextmenu="return false">
         
       <button type="submit">Login</button>
     </div>
@@ -63,19 +63,19 @@ window.onclick = function(event) {
                 <p>Please fill in this form to create an account.</p>
                 <hr>
                 <label for="name"><b>name</b></label>
-                <input type="text" placeholder="Enter name" name="name" required>
+                <input type="text" placeholder="Enter name" name="name" required oncontextmenu="return false">
 
                 <label for="id"><b>id</b></label>
-                <input type="text" placeholder="Enter id" name="id" required>
+                <input type="text" placeholder="Enter id" name="id" required oncontextmenu="return false">
 
                 <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
+                <input type="text" placeholder="Enter Email" name="email" required oncontextmenu="return false">
 
                 <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+                <input type="password" placeholder="Enter Password" name="psw" required oncontextmenu="return false">
 
                 <label for="psw-repeat"><b>Repeat Password</b></label>
-                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required oncontextmenu="return false">
 
                 
                 <div class="clearfix">
