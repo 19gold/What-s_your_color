@@ -1,3 +1,4 @@
+<<<<<<< HEAD:WYC/WebContent/mainStyle.css
 @charset "utf-8";
 
 body{
@@ -77,4 +78,79 @@ button{
     }
    
 
+=======
+@charset "utf-8";
+
+body{
+	width:100%;
+	height:100%;
+	background-image:url('img/main.jpg');
+	background-repeat:no-repeat; 
+	background-position: center top;
+	position : relative;
+}
+
+.p1{
+	 	display: inline-block;
+	 	/*float:left;*/
+	 	margin-right:10px;
+	 	align:center;
+	 	color: black;
+	    font-size: 220px;
+	 	font-family:"a시월구일4";
+	 	text-align: center;
+	 	
+}
+
+.title{
+	positio :absolute;
+    color: black;
+    font-size: 100px;
+ 	font-family:"a시월구일4";
+ 	text-align: center;
+ 	word-space : nowrap;
+}
+#f1{
+	margin-bottom : 1500px;
+}
+button{
+    
+	padding: 280% 20%;
+	border-radius: 50px;
+	background-color: red;
+	border : none;
+	text-align:center;
+}
+@media (min-width: 788px) and (max-width: 1300px) and (orientation: landscape) {
+    .title {
+        font-size: 90px;
+    }
+	
+}
+
+@media (min-width: 481px) and (max-width: 787px) {
+
+    /*tablet version*/
+    .title {
+        font-size: 60px;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /*mobile version*/
+    .title {
+        font-size: 30px;
+    }
+
+}
+
+@media (min-width: 0px) and (max-width: 319px) or (min-height: 0) and (max-height: 812px) {
+    /*mobile version*/
+    .title {
+    	margin-top : 20px;
+        font-size: 10px;
+    }
+
+>>>>>>> e0383e0d900ab306684acc0656bcbbce8e335ade:WebContent/mainStyle.css
 }
