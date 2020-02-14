@@ -9,8 +9,6 @@ body{
 	position : relative;
 }
 
-     
-
 .p1{
 	 	display: inline-block;
 	 	/*float:left;*/
@@ -26,55 +24,51 @@ body{
 .title{
 	positio :absolute;
     color: black;
-    font-size: 120px;
+    font-size: 100px;
  	font-family:"a시월구일4";
  	text-align: center;
  	word-space : nowrap;
 }
-
+#f1{
+	margin-bottom : 1500px;
+}
 button{
-    /*margin-top : 100px;*/
+    
 	padding: 280% 20%;
 	border-radius: 50px;
-	background-color: #e8433d73;
+	background-color: red;
 	border : none;
-	align:center;
+	text-align:center;
 }
-@media (min-width: 788px) and (max-width: 1124px) and (orientation: landscape) {
+@media (min-width: 788px) and (max-width: 1300px) and (orientation: landscape) {
     .title {
-        position: absolute;
-        font-size: 100px;
+        font-size: 90px;
     }
-
+	
 }
 
 @media (min-width: 481px) and (max-width: 787px) {
 
     /*tablet version*/
     .title {
-        position: absolute;
-        font-size: 80px;
+        font-size: 60px;
     }
 
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-
     /*mobile version*/
     .title {
-        position: absolute;
-        font-size: 40px;
+        font-size: 30px;
     }
 
 }
 
-@media (min-width: 0px) and (max-width: 319px) {
-
+@media (min-width: 0px) and (max-width: 319px) or (min-height: 0) and (max-height: 812px) {
     /*mobile version*/
     .title {
-        position: absolute;
-        font-size: 20px;
+    	margin-top : 20px;
+        font-size: 10px;
     }
-   
 
 }

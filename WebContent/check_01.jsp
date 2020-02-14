@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<div algin="center">
+	<div align="center">
 		  <button>EUROPE</button>&nbsp;&nbsp;&nbsp;&nbsp;
 		  <button>ASIA</button>&nbsp;&nbsp;&nbsp;&nbsp;
 		  <button>AMERICA</button><br><br><br>

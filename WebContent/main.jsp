@@ -9,7 +9,8 @@
 
     <link href="mainStyle.css" rel="stylesheet" type="text/css">
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script>
+	<script>
+	    
         $(function () {
             $("#bt1").mouseover(function () { $("#p1").slideUp("slow"); });
             $("#bt1").mouseout(function () { $("#p1").slideDown("slow"); });
@@ -25,7 +26,7 @@
     <p class="title" id="title">What's your color</p>
     <center>
         <!--<div class='member'>-->
-        <div id="p1"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+        <div id="p1"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br><br/><br/></div>
         <span id="bt1">
             <button id="btn1" class="button1 a" onclick="location.href='member.jsp'">회원 </button></span>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
