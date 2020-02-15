@@ -47,9 +47,9 @@
 	}
 	con.close();
 	%>
-	
+
 	<script>
 		alert('message -> '+msg);
 	</script>
 </body>
-</html>
+</html> 

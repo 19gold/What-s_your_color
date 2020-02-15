@@ -1,84 +1,3 @@
-<<<<<<< HEAD:WYC/WebContent/mainStyle.css
-@charset "utf-8";
-
-body{
-	width:100%;
-	height:100%;
-	background-image:url('img/main.jpg');
-	background-repeat:no-repeat; 
-	background-position: center top;
-	position : relative;
-}
-
-     
-
-.p1{
-	 	display: inline-block;
-	 	/*float:left;*/
-	 	margin-right:10px;
-	 	align:center;
-	 	color: black;
-	    font-size: 220px;
-	 	font-family:"a시월구일4";
-	 	text-align: center;
-	 	
-}
-
-.title{
-	positio :absolute;
-    color: black;
-    font-size: 120px;
- 	font-family:"a시월구일4";
- 	text-align: center;
- 	word-space : nowrap;
-}
-
-button{
-    /*margin-top : 100px;*/
-	padding: 280% 20%;
-	border-radius: 50px;
-	background-color: #e8433d73;
-	border : none;
-	align:center;
-}
-@media (min-width: 788px) and (max-width: 1124px) and (orientation: landscape) {
-    .title {
-        position: absolute;
-        font-size: 100px;
-    }
-
-}
-
-@media (min-width: 481px) and (max-width: 787px) {
-
-    /*tablet version*/
-    .title {
-        position: absolute;
-        font-size: 80px;
-    }
-
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-
-    /*mobile version*/
-    .title {
-        position: absolute;
-        font-size: 40px;
-    }
-
-}
-
-@media (min-width: 0px) and (max-width: 319px) {
-
-    /*mobile version*/
-    .title {
-        position: absolute;
-        font-size: 20px;
-    }
-   
-
-=======
 @charset "utf-8";
 
 body{
@@ -99,7 +18,6 @@ body{
 	    font-size: 220px;
 	 	font-family:"a시월구일4";
 	 	text-align: center;
-	 	
 }
 
 .title{
@@ -114,7 +32,6 @@ body{
 	margin-bottom : 1500px;
 }
 button{
-    
 	padding: 280% 20%;
 	border-radius: 50px;
 	background-color: red;
@@ -152,5 +69,4 @@ button{
         font-size: 10px;
     }
 
->>>>>>> e0383e0d900ab306684acc0656bcbbce8e335ade:WebContent/mainStyle.css
 }
