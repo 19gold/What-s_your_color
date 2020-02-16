@@ -25,18 +25,20 @@
 		DBvar dv = new DBvar();
 		DBlist dl = new DBlist();
 		Connection con=databases.getCon();
-		
+		System.out.println("checkid에서 db연동 확인");
 		String msg, url;
 		
-		String id = request.getParameter("id");	
 		
-		int check=dl.checkid(id);
+		String id = request.getParameter("id");	
+		System.out.println("@@@@@");
+		dv.setId(id);
+		int check=dl.checkid(dv);
 		System.out.println("check --> "+check);
 		
 		if(check==1){%>
 		
 		<b><font color="red"><%=id%></font>는 이미 사용중인 아이디입니다.</b>
-		<form name="checkForm" method="post" action="checkid.jsp">
+		<form name="checkForm" method="post" action="DBlist.jsp">
 		<b>다른 아디를 선택하세요.</b><br><br>
 		<input type="text" name="id">
 		<input type="submit" value="ID중복확인">
@@ -53,8 +55,9 @@
 	<script>
 		function setid(){
 			System.out.println("setid()들어오면 => ");
-			opener.document.userinput.id.value="<%=id%>";
+			opener.document.userinput.id.value ="<%=id%>";
 			self.close();
+		
 		}
 	</script>
 </body>
