@@ -23,7 +23,6 @@
 	<script>
 		// Get the modal
 		var modal = document.getElementById('id01');
-
 		// When the user clicks anywhere outside of the modal, close it
 		window.onclick = function(event) {
 			if (event.target == modal) {
@@ -83,15 +82,15 @@
 				<label for="email"><b>Email</b></label> <input type="text"
 					placeholder="Enter Email" name="email" required
 					oncontextmenu="return false"> <label for="psw"><b>Password</b></label>
-				<input id="pw" type="password"
+				<input id="psw" type="password"
 					placeholder="Enter Password(비밀번호는 6글자 이상, 16글자 이하만 이용 가능합니다.)"
-					name="pswnm" required oncontextmenu="return false" maxlength="20">
+					name="psw" required oncontextmenu="return false" maxlength="20">
 
 				<label for="psw-repeat"><b>Repeat Password</b></label> <input
 					id="pwCheck" type="password" onchange=" repeatpw()"
 					onclick="cntpw()" placeholder="Repeat Password" name="pswrepeat"
 					required oncontextmenu="return false" maxlength="20" /> <span
-					id="same"></span>
+					id="same">     </span>
 
 				<div class="clearfix">
 					<button type="reset"
@@ -116,7 +115,7 @@
 				return;
 			}
 			//url과 사용자 입력 id를 조합합니다
-			url = "confirmID.jsp?id=" + inputid.id.value;
+			url = "checkid.jsp?id=" + inputid.id.value;
 			//새로운 윈도우 열기
 			open(
 					url,
@@ -124,19 +123,17 @@
 					"toolar=no, location=no, status=no, menubar=no, scrollbars=no, resizable=no, width=310, height=180");
 		}
 		function cntpw() {
-			var pw = document.getElementById('pw');
+			var pw = document.getElementById('psw');
 			if ((pw.value).length < 6 || (pw.value).length > 16) {
 				alert("비밀번호는 6글자 이상, 16글자 이하만 이용 가능합니다.");
 				pw.focus();
 			}
 		}
 		function repeatpw() {
-			var pw = document.getElementById('pw');
+			var pw = document.getElementById('psw');
 			var confirmPW = document.getElementById('pwCheck');
-
 			var bt = document.getElementById('btnJoin');
 			if (6 <= pw.value.length <= 16 && 6 <= confirmPW.value.length <= 16) {
-
 				if (pw.value == confirmPW.value) {
 					document.getElementById('same').innerHTML = '비밀번호가 일치합니다.';
 					document.getElementById('same').style.color = 'green';
@@ -151,7 +148,6 @@
 					bt.type = "button";
 					i = 0;
 				}
-
 			}
 		}
 		function confirm() {

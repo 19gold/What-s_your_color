@@ -1,0 +1,56 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%@page import="java.sql.SQLException"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@ page import ="java.sql.Connection" %>
+<%@ page import ="DB.databases"%>
+<%@ page import ="DB.DBvar" %>
+<%@ page import ="DB.DBlist" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>id check</title>
+</head>
+<body>
+	<% 
+		request.setCharacterEncoding("euc-kr"); 
+	
+		databases databases = new databases();
+		DBvar dv = new DBvar();
+		DBlist dl = new DBlist();
+		Connection con=databases.getCon();
+		
+		String msg, url;
+		
+		String id = request.getParameter("id");	
+		
+		int check=dl.checkid(id);
+		System.out.println("check --> "+check);
+		
+		if(check==1){%>
+		
+		<b><font color="red"><%=id%></font>는 이미 사용중인 아이디입니다.</b>
+		<form name="checkForm" method="post" action="checkid.jsp">
+		<b>다른 아디를 선택하세요.</b><br><br>
+		<input type="text" name="id">
+		<input type="submit" value="ID중복확인">
+		</form>
+		<%
+		}else{
+		%>
+		<center>
+		<b>입력하신<font color="red"><%=id%></font>는<br>
+		사용하실 수 있는 ID입니다.</b><br><br>
+		<input type="submit" value="닫기" onclick="setid()">
+		</center>
+		<%}%>
+	<script>
+		function setid(){
+			System.out.println("setid()들어오면 => ");
+			opener.document.userinput.id.value="<%=id%>";
+			self.close();
+		}
+	</script>
+</body>
+</html>
