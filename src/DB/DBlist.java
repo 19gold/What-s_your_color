@@ -46,4 +46,29 @@ public class DBlist {
 		}
 		return result;
 	}
+	public int checkid(String id) throws Exception{
+		int x=-1;
+		try {
+			con=databases.getCon();//DB커넥션연결
+			sql="select id from member where id = ?";
+			pstmt=con.prepareStatement(sql);
+			rs=pstmt.executeQuery();
+			
+			if(rs.next())
+				x=1;
+			else
+				x=-1;
+		}catch(Exception ex) {
+			ex.printStackTrace();
+			System.out.println("checkid 되지 않음");
+		}finally {
+			try{
+				if(pstmt!=null)pstmt.close();
+				if(con!=null)con.close();
+		}catch(SQLException se){
+				System.out.println(se.getMessage());
+			}
+		}
+		return x;
+	}
 }
