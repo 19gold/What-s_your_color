@@ -38,8 +38,8 @@
 		if(check==1){%>
 		
 		<b><font color="red"><%=id%></font>는 이미 사용중인 아이디입니다.</b>
-		<form name="checkForm" method="post" action="DBlist.jsp">
-		<b>다른 아디를 선택하세요.</b><br><br>
+		<form name="checkForm" method="post" action="checkid.jsp">
+		<b>다른 아이디를 선택하세요.</b><br><br>
 		<input type="text" name="id">
 		<input type="submit" value="ID중복확인">
 		</form>
@@ -49,15 +49,14 @@
 		<div class = "center1">
 		<b>입력하신<font color="red"><%=id%></font>는<br>
 		사용하실 수 있는 ID입니다.</b><br><br>
-		<input type="submit" value="닫기" onclick="setid()">
+		<input type="submit" value="닫기" onclick="window.close()"onclick=" ckid()">
 		</div>
 		<%}%>
 	<script>
-		function setid(){
-			System.out.println("setid()들어오면 => ");
-			opener.document.userinput.id.value ="<%=id%>";
-			self.close();
-		
+	</script>
+	<script src="signupup.jsp">
+		function idchange(){
+			
 		}
 	</script>
 </body>

@@ -81,6 +81,9 @@
 					"confirm",
 					"toolar=no, location=no, status=no, menubar=no, scrollbars=no, resizable=no, width=310, height=180");
 		}
+		function ckid(){
+			ckinfo[0]=1;
+		}
 		function cntpw() {
 			var pw = document.getElementById('psw');
 			if ((pw.value).length < 6 || (pw.value).length > 16) {
@@ -116,7 +119,7 @@
 		function confirm() {
 			var pw = document.getElementById('pwCheck');
 			for (z = 0; z <= ckinfo.length; z++) {
-				if (ckinfo[z] != 1) {
+				if (ckinfo[z] ==0) {
 					if (z == 0) {
 						alert("아이디 중복확인을 해주세요");
 						iidd.focus();
