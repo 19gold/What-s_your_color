@@ -9,6 +9,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+	.center1{
+		text-align : center;
+	}
+</style>
 <meta charset="EUC-KR">
 <title>id check</title>
 </head>
@@ -39,11 +44,11 @@
 		<%
 		}else{
 		%>
-		<center>
+		<div class = "center1">
 		<b>입력하신<font color="red"><%=id%></font>는<br>
 		사용하실 수 있는 ID입니다.</b><br><br>
 		<input type="submit" value="닫기" onclick="setid()">
-		</center>
+		</div>
 		<%}%>
 	<script>
 		function setid(){
