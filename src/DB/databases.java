@@ -1,3 +1,4 @@
+  
 package DB;
 
 import java.sql.*;
@@ -9,10 +10,10 @@ public class databases {
 		try {
 			Class.forName("org.gjt.mm.mysql.Driver");
 			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/gold","root","mirim2");
-			System.out.println("DB¿¬µ¿ ¿Ï·á");
+			System.out.println("DBì—°ë™ì„±ê³µ");
 			return con;
 		}catch(ClassNotFoundException ce) {
-			System.out.println("¾ÈµÊ");
+			System.out.println("Â¾ÃˆÂµÃŠ");
 			return null;
 		}
 	}

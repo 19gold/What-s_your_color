@@ -1,7 +1,7 @@
 package DB;
 
 public class DBvar {
-	private String name;//�̸�_member
+	private String name;//ÀÌ¸§_member
 	private String id;//id_member;
 	private String psw;//psw_member;
 	private String email;//email_member;
