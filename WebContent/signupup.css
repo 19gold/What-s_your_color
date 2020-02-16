@@ -1,0 +1,85 @@
+@charset "EUC-KR";
+
+body {
+	background-image: url('img/bgmeme.jpg'); /* 배경 이미지 불러오기 */
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.welcome {
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: bold;
+	color: #d92c45;
+	width: 100%;
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: 50px;
+}
+
+input[type=text], input[type=password] {
+	width: 230px;
+	height: 27px;
+	padding: 12px 20px;
+	margin: 5px 0;
+	/*display: inline-block;*/
+	border: 0px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 20px;
+	background-color:#e6e6e6;
+	-moz-box-shadow:inset 0 0 10px #c8c8c8;
+}
+
+.container {
+	padding: 0 10px 0 10px;
+	float: right;
+	width: 40%;
+}
+
+.checkid {
+	border-radius: 30px;
+	background-color: #d92c45;
+	width: 30%;
+	height: 27px;
+	border: 1px solid #ccc;
+	font-size: 9px;
+}
+
+.signupbtn {
+	margin-top: 60px; width : 100%;
+	height: 46px;
+	border: 1px solid #ccc;
+	border-radius: 30px;
+	background-color: #d92c45;
+	width: 100%;
+}
+
+button {
+	color: white;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: bold;
+}
+
+#same {
+	font-size: 10px;
+	text-align : right;
+}
+
+table {
+	width: 55%;
+	margin-top: 130px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #17464c;
+}
+#psw{
+	font-size : 9px;
+}
+.left {
+	width: 20%;
+	text-align: left;
+	padding-right : 56px;
+}
+
+#id {
+	width: 65%;
+}
