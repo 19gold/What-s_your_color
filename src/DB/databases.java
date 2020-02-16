@@ -1,4 +1,3 @@
-  
 package DB;
 
 import java.sql.*;
