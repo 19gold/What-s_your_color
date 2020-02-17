@@ -1,0 +1,61 @@
+@charset "EUC-KR";
+
+
+body{
+	width:100%;
+	height:100%;
+	background-image:url('img/menu.png');
+	background-repeat:no-repeat; 
+	background-position: center top; ;
+}
+
+#btn1{
+	position:relative;
+	padding:15px 10px;
+	margin-bottom:-15px;
+	width : 180px;
+	border-radius: 60px;
+	background-color: #d92c45;
+	color:#ffffff;
+	border : 0px;	
+	align:center;
+	font-size:16px;
+	font-family: 'Noto Sans', sans-serif;
+	left : 19%;
+	top : 100%;
+	box-shadow: 0px 0px 20px #c8c8c8;
+}
+
+#btn2{
+	position:relative;
+	padding:15px 10px;
+	margin-bottom:-15px;
+	width : 180px;
+	border-radius: 60px;
+	background-color: #d92c45;
+	color:#ffffff;
+	border : 0px;	
+	align:center;
+	font-size:16px;
+	font-family: 'Noto Sans', sans-serif;
+	left : 35%;
+	top : 100%;
+	box-shadow: 0px 0px 20px #c8c8c8;
+}
+
+#btn3{
+	position:relative;
+	padding:15px 10px;
+	margin-bottom:-15px;
+	width : 180px;
+	border-radius: 60px;
+	background-color: #d92c45;
+	color:#ffffff;
+	border : 0px;	
+	align:center;
+	font-size:16px;
+	font-family: 'Noto Sans', sans-serif;
+	left : 52%;
+	top : 100%;
+	box-shadow: 0px 0px 20px #c8c8c8;
+}
