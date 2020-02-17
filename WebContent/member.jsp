@@ -8,59 +8,32 @@
 
 </head>
 <body style="overflow: hidden;">
-
-	<center>
-		<img src="img/login_bg.gif" height="40%" width="40%"
-			oncontextmenu="return false"><br>
-		<button class="fbtn"
-			onclick="document.getElementById('id01').style.display='block'"
-			style="width: auto;">Login</button>
-		<a href="signupup.jsp"><button class="fbtn"style="width: auto;">Sign Up</button></a>
-	</center>
-
-	<script>
-		// Get the modal
-		var modal = document.getElementById('id01');
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-			if (event.target == modal) {
-				modal.style.display = "none";
-			}
-		}
-	</script>
-
-	<div id="id01" class="modal">
-
-		<form class="modal-content animate" action="signin.jsp" method="post"
-			class="signin_form">
-			<div class="containsignin">
-				<div class="imgcontainer">
-					<img src="img/login_bg.gif" alt="Avatar" class="avatar"
-						oncontextmenu="return false">
-				</div>
-
-				<div class="container">
-					<label for="uname"><b>Username</b></label> <input type="text"
-						placeholder="Enter Id" name="uname" required
-						oncontextmenu="return false"> <label for="psw"><b>Password</b></label>
-					<input type="password" placeholder="Enter Password" name="psw"
-						required oncontextmenu="return false">
-
-					<button type="submit">Login</button>
-				</div>
-
-				<div class="container" style="background-color: #f1f1f1">
-					<button type="button"
-						onclick="document.getElementById('id01').style.display='none'"
-						class="cancelbtn">Cancel</button>
-					<span class="psw">Forgot <a href="#">password?</a></span>
-				</div>
-			</div>
-		</form>
+<div class = "container"></div>
+	<img src="img/login_bg.gif" height="30%" width="30%"
+		oncontextmenu="return false">
+		<table>
+			<tr>
+				<td class="left">I D</td>
+				<td><input type="text" id="idid" name="id" required
+					oncontextmenu="return false"></td>
+			</tr>
+			<tr>
+				<td class="left">PW</td>
+				<td><input id="psw" type="password" name="psw" required
+					oncontextmenu="return false" maxlength="20"></td>
+			</tr>
+			<tr>
+				<td style="text-align: right;" colspan="2" class="forgot"><a
+					href="#">FORGOT PW</a></td>
+			</tr>
+			<tr>
+				<td colspan=" 2"><a href="signupup.jsp" class="create">
+						<button type="button" class="createaccount" id="cac">CREATE
+							ACCOUNT</button>
+				</a>
+					<button type="button" class="enter" id="ent">ENTER</button></td>
+			</tr>
+		</table>
 	</div>
-
-	
-	
-
 </body>
 </html>

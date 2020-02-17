@@ -65,20 +65,25 @@
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div class = "survey1">
-	<form>
-		<input type="button" class= "button" name="europe" value="유럽"><br><br><br>
-		<input type="button" class= "button" name="asia" value="아시아"><br><br><br>
-		<input type="button" class= "button" name="america" value="아메리카"><br><br><br>
-		<input type="button" class= "button" name="africa" value="아프리카"><br><br><br>
-		<input type="button" class= "button" name="oceania" value="오세아니아"><br><br><br>
+	<form> 
+		<input type="button" class= "button" name="japan1" value="훗카이도"><br><br><br>
+		<input type="button" class= "button" name="japan2" value="혼슈"><br><br><br>
+		<input type="button" class= "button" name="japan3" value="시코쿠"><br><br><br>
+		<input type="button" class= "button" name="japan4" value="큐수"><br><br><br>
+		<input type="button" class= "button" name="japan5" value="오키나와"><br><br><br>
 		<input type="button" id= "submit1" class= "submit1" value="next" width="100">
 	</form> 
 </div>
+<br><br><br><br><br>
 <div id="div2" class="absolute2"> </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
- <input type="text" id="survey2" name="survey2"><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<input type="button" class= "button" name="1" value="1"><br><br><br>
+		<input type="button" class= "button" name="2" value="2"><br><br><br>
+		<input type="button" class= "button" name="3" value="3"><br><br><br>
+		<input type="button" class= "button" name="4" value="4"><br><br><br>
+		<input type="button" class= "button" name="5" value="5명 이상"><br><br><br>
  <input type="button" id= "submit2" class= "submit2" value="next" width="100">
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div id="div3" class="absolute3"> </div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		<input type="button" class= "button" name="slient" value="조용한 분위기"><br><br><br>
@@ -89,16 +94,16 @@
 		<input type="button" id= "submit3" class= "submit3" value="next" width="100">
 <br><br><br><br><br><br><br><br><br><br><br><br>
 <div id="div4" class="absolute4"> </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<input type="button" class= "button" name="1" value="1"><br><br><br>
-		<input type="button" class= "button" name="2" value="2"><br><br><br>
-		<input type="button" class= "button" name="3" value="3"><br><br><br>
-		<input type="button" class= "button" name="4" value="4"><br><br><br>
-		<input type="button" class= "button" name="5" value="5명 이상"><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+ 		<input type="button" class= "button" name="mountain" value="산"><br><br><br>
+		<input type="button" class= "button" name="beach" value="바다"><br><br><br>
+		<input type="button" class= "button" name="country" value="시골"><br><br><br>
+		<input type="button" class= "button" name="city" value="도시"><br><br><br>
+		<input type="button" class= "button" name="snow" value="눈"><br><br><br>
 		<input type="button" id= "submit4" class= "submit4" value="next" width="100">
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div id="div5" class="absolute5"> </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
 		<input type="button" class= "button" name="nature" value="자연"><br><br><br>
 		<input type="button" class= "button" name="history" value="역사"><br><br><br>
 		<input type="button" class= "button" name="culture" value="문화체험"><br><br><br>
@@ -107,16 +112,18 @@
 		<input type="button" id= "submit5" class= "submit5" value="next" width="100">
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div id="div6" class="absolute6"> </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		<input type="button" class= "button" name="activitely" value="활발한 성격"><br><br><br>
 		<input type="button" class= "button" name="relax" value="느긋한 성격"><br><br><br>
 		<input type="button" class= "button" name="hottemper" value="급한 성격"><br><br><br>
 		<input type="button" class= "button" name="gentle" value="온화한 성격"><br><br><br>
-		<input type="button" class= "button" name="lazy" value="귀찮음 많은 성격"><br><br><br>
+		<input type="button" class= "button" name="lazy" value="게으른 성격"><br><br><br>
 		<input type="button" id= "submit6" class= "submit6" value="next" width="100">
 <br><br><br><br><br><br><br><br><br><br><br>
 <div id="div7" class="absolute7"> </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-	<input type="button" id= "submit6" class= "submit6" value="result" width="100">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<form action="result.jsp">
+	<input type="submit" id= "submit7" class= "submit7" value="result" width="100" >
+</form>
 </body>
 </html>

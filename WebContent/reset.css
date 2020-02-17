@@ -1,0 +1,19 @@
+@charset "EUC-KR";
+/*여백 초기화*/
+/* * {margin:0;padding: 0;}  /**->모든곳에 적용 */
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, textarea, tr, button, form{margin:0;padding:0;}
+/*a:link{text-decoration: none;}
+a:visited{text-decoration: none;}*/
+/*a:active{text-decoration: none;}*/
+a:hover{color : green;text-decoration: none;}
+a{color:#222;text-decoration: none;}
+/* 폰트 초기화 */
+body, input, textarea, select, button, table{font-family: 'Nanum Gothic', '돋움', '맑은 고딕';  color:#222;
+font-size:13px;line-height:1.5;}
+/*IR 기법*/
+.ir_pm{display:block;overflow:hidden;font-size:0px;line-height:00;text-indent: -99999px;}
+.ir_wa{display:block;overflow:hidden;position:relative;z-index:-1;width:100px;height: 100%;}
+/*블릿 기호 초기화*/
+ul, li, ol, dl, menu{list-style-type: none;}
+/*테두리 초기화*/
+img, fieldset {border : none;}
