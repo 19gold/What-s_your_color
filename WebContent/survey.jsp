@@ -121,21 +121,22 @@
          
       });
       $("#submit7").click(function(e) {
-         for(var i=0;i<5;i++){
-            if(tf[i]!=true){
-               console.log("########");
-               location.href="survey.jsp";
-            }
-            else{
-               location.href = "result.jsp?result=" + country.indexOf(selectedOptions['continent']) + "," 
-                     +mood.indexOf(selectedOptions['mood'])+","
-                     +nature.indexOf(selectedOptions['nature'])+","
-                     +activity.indexOf(selectedOptions['activity'])+","
-                     +character.indexOf(selectedOptions['character']);
-               }
-         }
-      });
-   });
+          var i=0;
+          for(i;i<5;i++){
+             if(tf[i]!=true){
+                
+                location.href="survey.jsp";
+             }
+             else{
+                location.href = "result.jsp?result=" + country.indexOf(selectedOptions['continent']) + "," 
+                      +mood.indexOf(selectedOptions['mood'])+","
+                      +nature.indexOf(selectedOptions['nature'])+","
+                      +activity.indexOf(selectedOptions['activity'])+","
+                      +character.indexOf(selectedOptions['character']);
+                }
+          }
+       });
+    });
    
 
    
