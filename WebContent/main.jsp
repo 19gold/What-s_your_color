@@ -9,7 +9,8 @@
 
     <link href="mainStyle.css" rel="stylesheet" type="text/css">
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script>
+	<script>
+	    
         $(function () {
             $("#bt1").mouseover(function () { $("#p1").slideUp("slow"); });
             $("#bt1").mouseout(function () { $("#p1").slideDown("slow"); });
@@ -22,16 +23,15 @@
 </head>
 
 <body style="overflow:hidden;">
-    <p class="title" id="title">What's your color</p>
+    <p class="title" id="title" >WHAT'S YOUR COLOR <BR> FOR TRAVEL</p>
     <center>
         <!--<div class='member'>-->
-        <div id="p1"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+        <div id="p1"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
         <span id="bt1">
-            <button id="btn1" class="button1 a" onclick="location.href='member.jsp'">회원 </button></span>
+            <button id="btn1" class="button1 a" onclick="location.href='member.jsp'" value="회원">회원</button></span>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <span id="bt2">
-            <button id="btn2" class="button2 b" onclick="location.href='member.jsp'">비회원 </button>
-            <!-- btn2를 눌렀을 땐 무조건 바로 설문지로 가야댄다능~ -->
+            <button id="btn2" class="button2 b" onclick="location.href='menu_notmem.jsp'">비회원 </button>
         </span>
         <!-- </div> -->
     </center>
