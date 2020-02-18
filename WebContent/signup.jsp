@@ -42,7 +42,7 @@
 		url="member.jsp";
 		if(result==1){
 			msg="회원가입 성공";
-			url="main.jsp";
+			url="survey.jsp";
 		}
 		
 	

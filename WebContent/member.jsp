@@ -11,10 +11,11 @@
 <div class = "container"></div>
 	<img src="img/login_bg.gif" height="30%" width="30%"
 		oncontextmenu="return false">
+		<form class="modal-content animate" action="signin.jsp" method="post">
 		<table>
 			<tr>
 				<td class="left">I D</td>
-				<td><input type="text" id="idid" name="id" required
+				<td><input type="text" id="idid" name="uname" required
 					oncontextmenu="return false"></td>
 			</tr>
 			<tr>
@@ -24,16 +25,17 @@
 			</tr>
 			<tr>
 				<td style="text-align: right;" colspan="2" class="forgot"><a
-					href="#">FORGOT PW</a></td>
+					href="forgotpw.jsp">FORGOT PW</a></td>
 			</tr>
 			<tr>
 				<td colspan=" 2"><a href="signupup.jsp" class="create">
 						<button type="button" class="createaccount" id="cac">CREATE
 							ACCOUNT</button>
 				</a>
-					<button type="button" class="enter" id="ent">ENTER</button></td>
+					<button type="submit" class="enter" id="ent">ENTER</button></td>
 			</tr>
 		</table>
+		</form>
 	</div>
 </body>
 </html>

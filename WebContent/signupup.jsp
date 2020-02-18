@@ -58,6 +58,7 @@
 						<td colspan="2"><button type="button" class="signupbtn"
 								onclick="confirm()" id="btnJoin">SIGN UP</button></td>
 					</tr>
+					<!-- signup.jsp 파일에 회원가입 되고 가는 링크 있음 -->
 				</table>
 			</div>
 		</form>
