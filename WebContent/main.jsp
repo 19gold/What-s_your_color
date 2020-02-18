@@ -23,15 +23,14 @@
 </head>
 
 <body style="overflow:hidden;">
-    <p class="title" id="title" >WHAT'S YOUR COLOR <BR> FOR TRAVEL</p>
     <center>
-        <!--<div class='member'>-->
-        <div id="p1"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+        <!--<div class='member'>--><br/><br/><br/><br/><br/><br/><br/>
+        <div id="p1"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div><br/><br/><br/><br/></div>
         <span id="bt1">
-            <button id="btn1" class="button1 a" onclick="location.href='member.jsp'" value="회원">회원</button></span>
+            <img class="btn-img" src="img\mem.png" onclick="location.href='member.jsp'"></span>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <span id="bt2">
-            <button id="btn2" class="button2 b" onclick="location.href='menu_notmem.jsp'">비회원 </button>
+            <img class="btn-img" src="img\nomem.png" onclick="location.href='menu_notmem.jsp'">
         </span>
         <!-- </div> -->
     </center>
