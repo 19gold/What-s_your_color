@@ -56,7 +56,7 @@ public class DBlist {
 			pstmt = con.prepareStatement(sql);
 			System.out.println("checkid sql ->" + sql);
 			pstmt.setString(1, dv.getId());
-			System.out.println(dv.getId());
+			//System.out.println(dv.getId());
 			rs = pstmt.executeQuery();
 			// System.out.println("checkid->rstmt.executeQuery()됨");
 
@@ -86,11 +86,10 @@ public class DBlist {
 	}
 
 	public String FindPsw(DBvar dv) {// 비밀번호 찾기 하는 부분
-		int result = -1;
-		String pswresult, checkpsw = "pswno";
-
+	
+		String checkpsw = "nofindpsw";
 		try {
-			String sql = "select psw from member where id=? and name=?";
+			String sql = "select psw from member where name=? and id=?";
 			// 이름과 아이디를 입력하여 비밀번호 찾는 sql문
 
 			System.out.println("sql = " + sql);
@@ -99,21 +98,20 @@ public class DBlist {
 			con = databases.getCon();
 			pstmt = con.prepareStatement(sql);
 			System.out.println("sql ->" + sql);
-			pstmt.setString(1, dv.getPsw());
-			System.out.println("dv.getPsw() 확인");
+			pstmt.setString(1, dv.getName());
+			pstmt.setString(2, dv.getId());
+			System.out.println("dv.get??()확인");
+			
 			rs = pstmt.executeQuery();
 			System.out.println("rs : " + rs);
 
-			if (rs.next()) {
-				System.out.println("rs.next()들어옴!!");
+			while(rs.next()) {
 				checkpsw = rs.getString("psw");
-
-			} else {
-				System.out.println("rs.next()안들어오무ㅠ");
-				checkpsw = "pswno";
+				System.out.println("rs.next()들어옴!!");
 			}
 		} catch (SQLException se) {
 			System.out.println(se.getMessage());
+			System.out.println("try 못 들어옴!");
 		} finally {
 			try {
 				if (pstmt != null)
@@ -166,4 +164,90 @@ public class DBlist {
 		return result;
 		
 	}
+	public String Insertreview(DBvar dv) {
+		String result=null;
+		try {
+			String sql = "insert into reviews values(?,?,?,?,?,?,?,?)";
+
+			System.out.println("sql = " + sql);
+
+			// System.out.println("1");
+			con = databases.getCon();
+			pstmt = con.prepareStatement(sql);			
+
+		} catch (SQLException se) {
+			System.out.println(se.getMessage());
+		} finally {
+			try {
+				if (pstmt != null)
+					pstmt.close();
+				if (con != null)
+					con.close();
+			} catch (SQLException se) {
+				System.out.println(se.getMessage());
+			}
+		}
+		return result;
+	}
+	public String ShowAllreview(DBvar dv) {
+		String result=null;
+		
+		try {
+			String sql = "select review from reviews";
+			System.out.println("ShowAllreview -> " + sql);
+			con = databases.getCon();
+			pstmt = con.prepareStatement(sql);
+			System.out.println("ShowAllreview의 con -> " + pstmt);
+		}catch (SQLException se) {
+			System.out.println(se.getMessage());
+			System.out.println("DB try 못들어옴~");
+		}finally {
+			try {
+				if (pstmt != null)
+					pstmt.close();
+				if (con != null)
+					con.close();
+			} catch (SQLException se) {
+				System.out.println(se.getMessage());
+			}
+		}
+		
+		return result;
+	}
+	/*
+	public String Myreview(DBvar dv) {
+		String result="noreview";
+		
+		try {
+			String sql = "select review from reviews where id=?";
+			System.out.println("Myreview의 sql -> "+sql);
+			con=databases.getCon();
+			pstmt=con.prepareStatement(sql);
+			System.out.println("Myreview의 con->"+pstmt);
+			
+			pstmt.setString(1, dv.getReview());
+			
+			rs = pstmt.executeQuery();
+			System.out.println("rs : " + rs);
+
+			while(rs.next()) {
+				result = rs.getString("review");
+				System.out.println("rs.next()들어옴!!");
+			}
+		}catch (SQLException se) {
+			System.out.println(se.getMessage());
+			System.out.println("DB try 못들어옴~");
+		} finally {
+			try {
+				if (pstmt != null)
+					pstmt.close();
+				if (con != null)
+					con.close();
+			} catch (SQLException se) {
+				System.out.println(se.getMessage());
+			}
+		}
+		return result;
+	}
+	*/
 }
