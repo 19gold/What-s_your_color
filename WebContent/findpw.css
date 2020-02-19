@@ -1,7 +1,7 @@
 @charset "EUC-KR";
 
 body {
-	background-image: url('img/findpwbg.png'); /* ¹è°æ ÀÌ¹ÌÁö ºÒ·¯¿À±â */
+	background-image: url('img/findpwbg.png'); /* Â¹Ã¨Â°Ã¦ Ã€ÃŒÂ¹ÃŒÃÃ¶ ÂºÃ’Â·Â¯Â¿Ã€Â±Ã¢ */
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: #fcf8f5;
@@ -22,6 +22,7 @@ body {
 	font-size:10px;
 }
 input[type=text] {
+	font-family: 'Noto Sans', sans-serif;
 	width: 200px;
 	height: 33px;
 	padding: 12px 20px;
@@ -31,7 +32,8 @@ input[type=text] {
 	border-radius: 20px;
 	background-color: #ffffff00;
 	margin-top: 15px;
-	background-color
+	text-align : center;
+	font-size : 18px;
 }
 
 div {
