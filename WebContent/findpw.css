@@ -34,6 +34,7 @@ input[type=text] {
 	margin-top: 15px;
 	text-align : center;
 	font-size : 18px;
+	inline-height:33px;
 }
 
 div {
@@ -43,9 +44,9 @@ div {
     border-radius: 20px;
     padding-top: 10px;
     margin: 545px auto 0 auto;
-    
+
     font-family: 'Noto Sans', sans-serif;
     font-weight: 555;
     font-size: 13px;
     color: #17464c;
-}
+} 

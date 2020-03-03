@@ -24,8 +24,8 @@
 
 <body style="overflow:hidden;">
     <center>
-        <!--<div class='member'>--><br/><br/><br/><br/><br/><br/><br/>
-        <div id="p1"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div><br/><br/><br/><br/></div>
+        <!--<div class='member'>--><br/><br/><br/><br/><br/><br/>
+        <div id="p1"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div><br/><br/><br/><br/></div>
         <span id="bt1">
             <img class="btn-img" src="img\mem.png" onclick="location.href='member.jsp'"></span>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

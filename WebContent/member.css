@@ -28,8 +28,10 @@ table{
 }
 a:hover{color : #d92c45;}
 a{color:#222;
-font-size:11px;text-decoration: underline;
+font-size:11px;text-decoration: none;
 color:#8c8c8c;}
+.forgot{text-decoration: underline;}
+.create{text-decoration: none;}
 .create:hover{
 	text-decoration: none;
 }

@@ -3,6 +3,7 @@
 body{
    width:100%;
    height:100%;
+   overflow-y:hidden;
    background-image:url('img/survey.png');
    background-repeat:no-repeat; 
    background-position: center top; ;
@@ -42,15 +43,11 @@ button {
    text-align: center;
    color:#929292;
    position : relative;
-   left : 40%;
+   left : 38%;
    top : 150%
 }
 
 .button:hover{
-   color:#d92c45;
-}
-
-.button:focus {
    color:#d92c45;
 }
 
@@ -73,10 +70,10 @@ input[ value="next"]{
 }
 
 .submit7{
-   padding: 40px 30px;
-   height : 20px;
-   width : 220px;
-   line-height:9px;
+   padding: 35px 35px;
+   /*height : 15px;
+   width : 220px;*/
+   line-height:7px;
    border-radius: 40px;
    background-color: #d92c45;
    color:#ffffff;
@@ -85,10 +82,9 @@ input[ value="next"]{
    font-size:20px;
    font-family:"a시월구일1";
    text-align: middle;
-   margin-top : 20px;
    position : absolute;
-   left : 45%;
-   top : 870%;
+   left : 43%;
+   top : 8150px;
 }
 
 div.absolute1 {
@@ -112,7 +108,7 @@ input[type=text] {
   top: 100%;
 }
 #btn1{
-   margin-bottom:400px;
+   margin-bottom:300px;
 }
 
 div.survey1{
@@ -120,26 +116,26 @@ div.survey1{
     left: -10px;
     top: -150px;
     margin-top : 1050px;
-    padding-top:200px;
-    margin-bottom:100px;
+    padding-top:260px;
+    margin-bottom:200px;
     
 }
 .absolute2{
-    padding-top: 350px;
-    margin-bottom: 280px;
+    padding-top: 250px;
+    margin-bottom: 357px;
 }
 .absolute3{
-    padding-top: 350px;
-    margin-bottom: 300px;
+    padding-top: 300px;
+    margin-bottom: 290px;
 }
 .absolute4{
     padding-top: 250px;
-    margin-bottom: 300px;
+    margin-bottom: 355px;
 }.absolute5{
     padding-top: 250px;
-    margin-bottom: 300px;
+    margin-bottom: 350px;
 }
 .absolute6{
-    padding-top: 260px;
+    padding-top: 240px;
     margin-bottom: 300px;
 }

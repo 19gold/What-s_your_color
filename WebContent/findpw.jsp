@@ -20,13 +20,11 @@
 
 <%
 	request.setCharacterEncoding("euc-kr");
-
 	databases databases = new databases();
 	DBvar dv = new DBvar();
 	DBlist dl = new DBlist();
 	Connection con = databases.getCon();
 	System.out.println("findpw에서 db연동 확인");
-
 	String findId=request.getParameter("id");
 	String findName=request.getParameter("name");
 	
