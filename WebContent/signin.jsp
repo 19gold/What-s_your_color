@@ -44,9 +44,9 @@
 		msg="로그인 실패";
 		System.out.println("Login failed");
 		//response.sendRedirect("member.jsp");
-		System.out.println("알라트제발");
-		out.println("<script>alert('아이디 또는 비밀번호가 일치하지 않습니다.');console.log('alert');</script>");
-		System.out.println("알라트됨?");
+		System.out.println("알라트제발");%>
+		<script>alert('아이디 또는 비밀번호가 일치하지 않습니다.');console.log('alert');</script>
+		<%System.out.println("알라트됨?");
 		out.println("<script></script>");
 		response.sendRedirect("member.jsp");
 		

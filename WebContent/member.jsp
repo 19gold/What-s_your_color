@@ -8,7 +8,7 @@
 
 </head>
 <body style="overflow: hidden;">
-<div class = "container"></div>
+<div class = "container">
 	<img src="img/login_bg.gif" height="30%" width="30%"
 		oncontextmenu="return false">
 		<form class="modal-content animate" action="signin.jsp" method="post">

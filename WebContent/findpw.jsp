@@ -18,37 +18,38 @@
 </head>
 <body>
 
-<%
-	request.setCharacterEncoding("euc-kr");
-	databases databases = new databases();
-	DBvar dv = new DBvar();
-	DBlist dl = new DBlist();
-	Connection con = databases.getCon();
-	System.out.println("findpw에서 db연동 확인");
-	String findId=request.getParameter("id");
-	String findName=request.getParameter("name");
+	<%
+		request.setCharacterEncoding("euc-kr");
+		databases databases = new databases();
+		DBvar dv = new DBvar();
+		DBlist dl = new DBlist();
+		Connection con = databases.getCon();
+		System.out.println("findpw에서 db연동 확인");
+		String findId = request.getParameter("id");
+		String findName = request.getParameter("name");
+
+		System.out.println("findId: " + findId);
+		System.out.println("findName: " + findName);
+
+		dv.setId(findId);
+		dv.setName(findName);
+
+		String result = dl.FindPsw(dv);
+		System.out.println("findpsw의 result값 - > " + result);
+	%>
 	
-	System.out.println("findId: "+findId);
-	System.out.println("findName: "+findName);
-	
-	dv.setId(findId);
-	dv.setName(findName);
-	
-	String result=dl.FindPsw(dv);
-	System.out.println("findpsw의 result값 - > "+result);
-	
-	
-	
-%>
-	<div>
-		<span>YOUR PASSWORD IS</span><BR> <input type="text" id="txt2"
-			disabled  value="<%=result%>"/>
+	<div class="container">
+		<img src="img/findpwicon.png" class="image"width="25%"><br>
+		<span class = "spn">"</span>
+		<div class = "div1">
+			<span>YOUR PASSWORD IS</span><BR> <input type="text" id="txt2"
+				disabled value="<%=result%>" />
+		</div>
+		<a href="member.jsp">
+			<button type="button" class="enter" id="ent">ENTER</button>
+		</a>
+
 	</div>
-	<a href="member.jsp">
-		<button type="button" class="enter" id="ent">ENTER</button>
-	</a>
-
-
 
 </body>
 </html>
